@@ -2,7 +2,7 @@
 
 An interactive **Streamlit** dashboard for exploring, aggregating, and visualising US domestic airline on-time performance data sourced from the Bureau of Transportation Statistics (BTS) — July 2025 snapshot.
 
-![Dashboard Header](screenshots/01_dashboard_header.png)
+![Dashboard Header](01_dashboard_header.png)
 
 ---
 
@@ -105,7 +105,7 @@ Seven headline KPI scorecards plus four Plotly Indicator gauges give an instant 
 - **Avg Arrival Delay · Avg Departure Delay**
 - Gauges for On-Time Rate, Avg Arrival Delay, Avg Departure Delay, and Cancellation Rate with traffic-light colouring
 
-![KPI Scorecards and Gauge Charts](screenshots/02_kpi_gauges.png)
+![KPI Scorecards and Gauge Charts](02_kpi_gauges.png)
 
 ---
 
@@ -117,11 +117,11 @@ Automatically inspects the loaded dataset, identifies missing values, and displa
 - Numeric summary statistics (`describe()`) for all key delay/performance fields
 - Raw data preview (first 200 rows)
 
-![Data Quality & Validation Module](screenshots/13_data_quality.png)
+![Data Quality & Validation Module](13_data_quality.png)
 
-![Numeric Summary Statistics](screenshots/14_numeric_stats.png)
+![Numeric Summary Statistics](14_numeric_stats.png)
 
-![Raw Data Preview](screenshots/15_raw_data.png)
+![Raw Data Preview](15_raw_data.png)
 
 ---
 
@@ -129,11 +129,11 @@ Automatically inspects the loaded dataset, identifies missing values, and displa
 
 A grouped bar chart comparing average **arrival** and **departure** delays side-by-side across all 14 carriers, sorted by on-time rate. Clearly highlights which carriers lead and which lag.
 
-![Average Arrival vs Departure Delay by Airline — Grouped Bar](screenshots/03_delay_grouped_bar.png)
+![Average Arrival vs Departure Delay by Airline — Grouped Bar](03_delay_grouped_bar.png)
 
 On-time arrival rate per carrier with an **80% industry target** reference line, plus cancellation rate ranked by severity:
 
-![On-Time Arrival Rate and Cancellation Rate by Airline](screenshots/04_ontime_cancel_rate.png)
+![On-Time Arrival Rate and Cancellation Rate by Airline](04_ontime_cancel_rate.png)
 
 ---
 
@@ -141,11 +141,11 @@ On-time arrival rate per carrier with an **80% industry target** reference line,
 
 A donut chart showing the five BTS delay cause proportions (**Late Aircraft 40.8% dominates**) plus a side-by-side flight status breakdown (On-Time 70.2% / Delayed 27.3% / Cancelled 2.45%):
 
-![Delay Cause Composition Donut + Flight Status Distribution](screenshots/09_delay_donut_status.png)
+![Delay Cause Composition Donut + Flight Status Distribution](09_delay_donut_status.png)
 
 Stacked bar chart decomposing delay cause contributions per airline — reveals which carriers are most exposed to each delay type:
 
-![Average Delay Composition by Airline — Stacked Bar](screenshots/05_delay_stacked.png)
+![Average Delay Composition by Airline — Stacked Bar](05_delay_stacked.png)
 
 ---
 
@@ -153,11 +153,11 @@ Stacked bar chart decomposing delay cause contributions per airline — reveals 
 
 A dual-axis time-series showing daily flight volume (blue area) and average arrival delay (red dotted line) across all of July 2025:
 
-![Daily Flight Volume and Average Arrival Delay — July 2025](screenshots/06_daily_trends.png)
+![Daily Flight Volume and Average Arrival Delay — July 2025](06_daily_trends.png)
 
 Day-of-week performance (Saturday best at 11.8 min · Sunday worst at 21.9 min) and departure-hour bar chart coloured **green → yellow → red** from 05:00 to 18:00:
 
-![Volume & Delay by Day of Week + Avg Delay by Departure Hour](screenshots/07_dow_hourly.png)
+![Volume & Delay by Day of Week + Avg Delay by Departure Hour](07_dow_hourly.png)
 
 ---
 
@@ -165,7 +165,7 @@ Day-of-week performance (Saturday best at 11.8 min · Sunday worst at 21.9 min) 
 
 Scatter plot of **Flight Distance vs Arrival Delay** with bubble size = Air Time, coloured by airline. Shows the near-zero Pearson correlation (−0.006) — longer routes actually perform *better* due to block-time padding:
 
-![Flight Distance vs Arrival Delay Scatter Plot](screenshots/08_scatter.png)
+![Flight Distance vs Arrival Delay Scatter Plot](08_scatter.png)
 
 ---
 
@@ -175,15 +175,15 @@ Three configurable heatmaps (select from dropdown) covering the full 7-day × 24
 
 **Average Arrival Delay (min)** — green in early morning, deep red at 16:00–19:00 peak PM:
 
-![Avg Arrival Delay — Day of Week × Departure Hour Heatmap](screenshots/10_heatmap_avg_delay.png)
+![Avg Arrival Delay — Day of Week × Departure Hour Heatmap](10_heatmap_avg_delay.png)
 
 **On-Time Rate (%)** — shows the inverse pattern; highest OTP at 05:00–08:00:
 
-![On-Time Rate (%) — Day of Week × Departure Hour Heatmap](screenshots/11_heatmap_ontime_rate.png)
+![On-Time Rate (%) — Day of Week × Departure Hour Heatmap](11_heatmap_ontime_rate.png)
 
 **Flight Volume** — Thursday peaks as the busiest departure day:
 
-![Flight Volume — Day of Week × Departure Hour Heatmap](screenshots/12_heatmap_flight_volume.png)
+![Flight Volume — Day of Week × Departure Hour Heatmap](12_heatmap_flight_volume.png)
 
 ---
 
@@ -195,7 +195,7 @@ A spreadsheet-style formula builder — pick any two numeric columns and an oper
 - **Delay Ratio** (Arr / Dep) → **1.11**
 - **Block Time Efficiency (%)** = AirTime ÷ ActualElapsedTime × 100 → **77.52%**
 
-![Custom Metric Calculator](screenshots/16_calculator.png)
+![Custom Metric Calculator](16_calculator.png)
 
 ---
 
@@ -203,7 +203,7 @@ A spreadsheet-style formula builder — pick any two numeric columns and an oper
 
 Dynamic group-by engine with 7 dimensions × 8 metrics. Results shown as a ranked table + colour-coded horizontal bar chart:
 
-![Aggregation & Grouping — Avg Arrival Delay by Airline](screenshots/17_aggregation.png)
+![Aggregation & Grouping — Avg Arrival Delay by Airline](17_aggregation.png)
 
 ---
 
